@@ -14,14 +14,10 @@ body {
 }
 
 #terminal {
-    maxwidth: 800px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 0 10px;
     font-size: 16px;
     line-height: 1.5;
-}
-
-#output {
-    marigin-bottom: 20px;
 }
 
 #input-line {
@@ -30,9 +26,17 @@ body {
 }
 
 #prompt {
-    color: #3fb950;
+    color: #c9d1d9;
     margin-right: 10px;
     font-weight: bold;
+}
+
+.user-host {
+    color: #3fb950;
+}
+
+.dir {
+    color: #58a6ff;
 }
 
 #command-input {
@@ -44,3 +48,4 @@ body {
     width: 100%;
     outline: none;
 }
+
