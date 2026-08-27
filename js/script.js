@@ -44,7 +44,7 @@ commandInput.addEventListener('keypress', function(e){
                     <span style='color: #58a6ff; font-weight: bold;'>=== Network & Social Links ===</span><br><br>
                     <span style='color: #3fb950;'>[+]</span> <strong>Github</strong>: <a href='https://github.com/ZeroLogicDev' target='_blank' style='color: #c9d1d9; text-decoration: underline;'>github.com</a><br>
                     <span style='color: #3fb950;'>[+]</span> <strong>LinkedIn</strong>: <a href='https://linkedin.com/in/ahlun-najarrudin' target='_blank' style='color: #c9d1d9; text-decoration: underline;'>Ahlun Najarrudin</a><br>
-                    <span style='color: #3fb950;'>[+]</span> <strong>Instagram</strong>: <a href='https://instagram.com/ahlun' target='_blank' style='color: #c9d1d9; text-decoration: underline;'>@lelouch.ln</a><br>
+                    <span style='color: #3fb950;'>[+]</span> <strong>Instagram</strong>: <a href='https://instagram.com/lelouch.ln' target='_blank' style='color: #c9d1d9; text-decoration: underline;'>@lelouch.ln</a><br>
                     <br>
                     <em>Click link above to open in a new tab.</em>
                     `);
