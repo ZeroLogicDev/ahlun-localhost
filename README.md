@@ -16,9 +16,15 @@ This project serves as a personal site built to reflect my identity as a develop
 | `network` | Lists my professional and social media links |
 | `clear` | Clears the terminal output |
 
+## >> motd command
+
+This is the motd command
+
+<img width="944" height="428" alt="Screenshot motd command" src="images/image.png" />
+
 ## >> How Does It Work?
 
 Click on this link [here](https://zerologicdev.github.io/ahlun-localhost/) and start exploring command by command
 
 ---
-Built for the HackClub Stardance submission
+By ZeroLogic
