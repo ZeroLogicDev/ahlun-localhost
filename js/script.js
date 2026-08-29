@@ -37,7 +37,20 @@ commandInput.addEventListener('keypress', function(e){
                     `);
                 break;
             case 'music':
-                printOutput("Loading playlist... (coming soon)<br>");
+                printOutput(`
+                    <span style='color: #58a6ff; font-weight: bold;'>=== Favorite Music Tracks ===</span><br><br>
+                    <span style='color: #3fb950;'>[+]</span> Memories<br>
+                    <span style='color: #3fb950;'>[+]</span> Lose You To Love Me<br>
+                    <span style='color: #3fb950;'>[+]</span> Rumors<br>
+                    <span style='color: #3fb950;'>[+]</span> Supercut<br>
+                    <span style='color: #3fb950;'>[+]</span> Somebody That I Used To Know<br>
+                    <span style='color: #3fb950;'>[+]</span> I Won't Cry Anymore<br>
+                    <span style='color: #3fb950;'>[+]</span> Traitor<br>
+                    <span style='color: #3fb950;'>[+]</span> Happier<br>
+                    <span style='color: #3fb950;'>[+]</span> Flowers<br>
+                    <span style='color: #3fb950;'>[+]</span> Self Healing<br><br>
+                    <em>Note: These are just a few of my favorite tracks. I have a diverse taste in music and enjoy exploring different genres and artists.</em>
+                    `);
                 break;
             case 'network':
                 printOutput(`
@@ -51,8 +64,8 @@ commandInput.addEventListener('keypress', function(e){
                 break;
             case 'neofetch':
                 printOutput(`
-                    <div style="display: flex; gap: 35px; align-items: center; font-size: 1.15em;">
-                    <pre style="color: #58a6ff; font-weight: bold; margin: 0; line-height: 1.1;">
+                    <div style="display: flex; gap: 35px; align-items: center; font-size: 1.16em;">
+                    <pre style="color: #58a6ff; font-weight: bold; margin: 0; line-height: 1.2;">
                      -\`
                     .o+\`
                    \`ooo/
@@ -61,34 +74,39 @@ commandInput.addEventListener('keypress', function(e){
                  -+oooooo+:
                \`/:-:++oooo+:
               \`/++++/+++++++:
-              \`/++++++++++++++:
+             \`/++++++++++++++:
             \`/+++ooooooooooooo/\`
            ./ooosssso++osssssso+\`
-         .oossssso- \`\`\`\` /ossssss+\`
-        -osssssso.         :ssssssso.
-       :osssssss/           osssso+++.
-     /ossssssss/             +ssssooo/-
-   \`/ossssso+/:-             -:/+osssso+-
-  \`+sso+:-\`\                      \`.-/+oso:
- \`++:.                                \`-/+/
- .\`                                      \`/
+         .oossssso- \`\`\`\ /ossssss+\`
+        -osssssso.       :ssssssso.
+       :osssssss/         osssso+++.
+      /ossssssss/          +ssssooo/-
+     \`/ossssso+/:          :/+osssso+-
+    \`+sso+:-\`\                 \`.-/+oso:
+   \`++:.                           \`-/+/
+   .\`                                 \`/
                     </pre>
                     <div style="line-height: 1.5; white-space: nowrap;">
                     <span  style="color: #3fb950; font-weight: bold;">ahlun</span>@<span style="color: #3fb950; font-weight: bold;">localhost</span><br>
                     -------------------------<br>
                     <span style="color: #58a6ff;" font-weight: bold;">OS</span>: Arch Linux<br>
                     <span style="color: #58a6ff;" font-weight: bold;">Kernel</span>: 6.5.11-arch1-1<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Uptime</span>: 1 hour, 23 minutes<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">Uptime</span>: 5 hour, 23 minutes<br>
                     <span style="color: #58a6ff;" font-weight: bold;">Packages</span>: 1234 (pacman)<br>
                     <span style="color: #58a6ff;" font-weight: bold;">Shell</span>: bash 5.2.15<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Resolution</span>: 1920x1080<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">Display</span>: 1920x1080 144Hz 17"<br>
                     <span style="color: #58a6ff;" font-weight: bold;">WM</span>: hyprland<br>
                     <span style="color: #58a6ff;" font-weight: bold;">Theme</span>: Dracula<br>
                     <span style="color: #58a6ff;" font-weight: bold;">Icons</span>: Papirus<br>
                     <span style="color: #58a6ff;" font-weight: bold;">Terminal</span>: Alacritty<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">Terminal Font</span>: Fira Code<br>
                     <span style="color: #58a6ff;" font-weight: bold;">CPU</span>: Intel i7-9700K (8) @ 4.90GHz<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">GPU</span>: NVIDIA GeForce RTX 5090<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">GPU 1</span>: NVIDIA GeForce RTX 5090<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">GPU 2</span>: NVIDIA GeForce RTX 5090<br>
                     <span style="color: #58a6ff;" font-weight: bold;">Memory</span>: 32GB<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">Swap</span>: 8GB<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">Disk</span>: 1TB NVMe SSD<br>
+                    <span style="color: #58a6ff;" font-weight: bold;">Battery</span>: 100% (Charging)<br>
                     </div>
                     </div>
                     `);
@@ -117,6 +135,13 @@ commandInput.addEventListener('keypress', function(e){
                 break;
             case 'clear':
                 outputArea.innerHTML = '';
+                break;
+            case 'date':
+                const currentDate = new Date();
+                printOutput(`Current date and time: ${currentDate.toLocaleString()}`);
+                break;
+            case 'sudo':
+                printOutput(`<span style="color: #f85149;">You not allowed to use sudo command here. This incident will be reported.</span>`);
                 break;
             default:
                 printOutput(`<span style="color: #f85149;">${command}: command not found</span>`);

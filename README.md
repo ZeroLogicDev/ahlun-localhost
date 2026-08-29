@@ -27,4 +27,4 @@ This is the motd command
 Click on this link [here](https://zerologicdev.github.io/ahlun-localhost/) and start exploring command by command
 
 ---
-By ZeroLogic
+By ZeroLogic with love
