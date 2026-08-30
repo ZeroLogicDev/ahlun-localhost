@@ -47,16 +47,16 @@ commandInput.addEventListener("keypress", function (e) {
                 if (args.length === 0 || args[0] === "lists") {
                     printOutput(`
                     <span style='color: #58a6ff; font-weight: bold;'>=== Favorite Music Tracks ===</span><br><br>
-                    <span style='color: #3fb950;'>[+]</span> Memories<br>
-                    <span style='color: #3fb950;'>[+]</span> Lose You To Love Me<br>
-                    <span style='color: #3fb950;'>[+]</span> Rumors<br>
-                    <span style='color: #3fb950;'>[+]</span> Supercut<br>
-                    <span style='color: #3fb950;'>[+]</span> Somebody That I Used To Know<br>
-                    <span style='color: #3fb950;'>[+]</span> I Won't Cry Anymore<br>
-                    <span style='color: #3fb950;'>[+]</span> Traitor<br>
-                    <span style='color: #3fb950;'>[+]</span> Happier<br>
-                    <span style='color: #3fb950;'>[+]</span> Flowers<br>
-                    <span style='color: #3fb950;'>[+]</span> Self Healing<br><br>
+                    <span style='color: #3fb950;'>[1]</span> Memories<br>
+                    <span style='color: #3fb950;'>[2]</span> Lose You To Love Me<br>
+                    <span style='color: #3fb950;'>[3]</span> Rumors<br>
+                    <span style='color: #3fb950;'>[4]</span> Supercut<br>
+                    <span style='color: #3fb950;'>[5]</span> Somebody That I Used To Know<br>
+                    <span style='color: #3fb950;'>[6]</span> I Won't Cry Anymore<br>
+                    <span style='color: #3fb950;'>[7]</span> Traitor<br>
+                    <span style='color: #3fb950;'>[8]</span> Happier<br>
+                    <span style='color: #3fb950;'>[9]</span> Flowers<br>
+                    <span style='color: #3fb950;'>[10]</span> Self Healing<br><br>
                     <em>Note: These are just a few of my favorite tracks. I have a diverse taste in music and enjoy exploring different genres and artists.</em>
                     `);
                 } else if (args[0] === "play") {
