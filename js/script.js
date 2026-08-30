@@ -118,7 +118,7 @@ commandInput.addEventListener("keypress", function (e) {
                     }
                 } else {
                     printOutput(
-                        `<span style="color: #f85149;"Usage: music [lists|play [track number]]</span>`,
+                        `<span style="color: #f85149; font-weight: bold;">Usage: music [lists|play [track number]]</span>`,
                     );
                 }
                 break;
@@ -134,8 +134,8 @@ commandInput.addEventListener("keypress", function (e) {
                 break;
             case "neofetch":
                 printOutput(`
-                    <div style="display: flex; gap: 35px; align-items: center; font-size: 1.16em;">
-                    <pre style="color: #58a6ff; font-weight: bold; margin: 0; line-height: 1.2;">
+                    <div style="display: flex; gap: 35px; align-items: center; font-size: 1.15em;">
+                    <pre style="color: #58a6ff; font-weight: bold; margin: 0; line-height: 1.1;">
                      -\`
                     .o+\`
                    \`ooo/
@@ -159,24 +159,21 @@ commandInput.addEventListener("keypress", function (e) {
                     <div style="line-height: 1.5; white-space: nowrap;">
                     <span  style="color: #3fb950; font-weight: bold;">ahlun</span>@<span style="color: #3fb950; font-weight: bold;">localhost</span><br>
                     -------------------------<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">OS</span>: Arch Linux<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Kernel</span>: 6.5.11-arch1-1<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Uptime</span>: 5 hour, 23 minutes<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Packages</span>: 1234 (pacman)<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Shell</span>: bash 5.2.15<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Display</span>: 1920x1080 144Hz 17"<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">WM</span>: hyprland<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Theme</span>: Dracula<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Icons</span>: Papirus<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Terminal</span>: Alacritty<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Terminal Font</span>: Fira Code<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">CPU</span>: Intel i7-9700K (8) @ 4.90GHz<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">GPU 1</span>: NVIDIA GeForce RTX 5090<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">GPU 2</span>: NVIDIA GeForce RTX 5090<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Memory</span>: 32GB<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Swap</span>: 8GB<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Disk</span>: 1TB NVMe SSD<br>
-                    <span style="color: #58a6ff;" font-weight: bold;">Battery</span>: 100% (Charging)<br>
+                    <span style="color: #58a6ff; font-weight: bold;">OS</span>: Arch Linux<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Kernel</span>: 7.1.11-arch1-1<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Uptime</span>: 7 hour, 23 minutes<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Packages</span>: 1234 (pacman)<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Shell</span>: bash 5.2.15<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Display</span>: 1920x1080 144Hz 17"<br>
+                    <span style="color: #58a6ff; font-weight: bold;">WM</span>: hyprland<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Terminal</span>: Alacritty<br>
+                    <span style="color: #58a6ff; font-weight: bold;">CPU</span>: AMD Ryzen 9 9950X (16) @ 5.70GHz<br>
+                    <span style="color: #58a6ff; font-weight: bold;">GPU 1</span>: NVIDIA GeForce RTX 5090<br>
+                    <span style="color: #58a6ff; font-weight: bold;">GPU 2</span>: AMD Radeon Graphics (integrated)<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Memory</span>: 32GB<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Swap</span>: 8GB<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Disk</span>: 1TB NVMe SSD<br>
+                    <span style="color: #58a6ff; font-weight: bold;">Battery</span>: 100% (Charging)<br>
                     </div>
                     </div>
                     `);
@@ -200,7 +197,7 @@ commandInput.addEventListener("keypress", function (e) {
                     </pre>
                     
                     Welcome to my personal terminal! Type <span style='color: #e5c07b;'>'help'</span> to see the list of available commands.<br>
-                    Last updated: <span style='color: #58a6ff;'>27 aug 2026</span><br>
+                    Last updated: <span style='color: #58a6ff;'>30 aug 2026</span><br>
                     `);
                 break;
             case "clear":
